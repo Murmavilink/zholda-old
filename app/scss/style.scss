@@ -957,13 +957,15 @@
     display: flex;
     flex-direction: column;
     padding: 20px;
-
+    cursor: pointer;
+  
     &--active {
       border-width: 1px 1px 0px 1px;
       border-style: solid;
       border-color: #F4F4F4;
       background-color: #fff;
       border-radius: 6px 6px 0px 0px;
+      border-color: red;
     }
 
     span {
@@ -983,6 +985,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
     svg {
       width: 10px;
       height: 18px;
@@ -990,7 +993,7 @@
   }
 
   &__place-wrap {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
     gap: 10px;
     padding: 10px;
@@ -998,6 +1001,9 @@
     border-radius: 6px;
     margin-top: -1px;
     margin-bottom: 50px;
+    &--active {
+      display: flex;
+    }
   }
 
   &__place-btn {
