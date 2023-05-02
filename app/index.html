@@ -1,0 +1,778 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Zholda</title>
+        <meta content="" name="description">
+        <meta content="" name="keywords">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta content="telephone=no" name="format-detection">
+        <!-- This make sence for mobile browsers. It means, that content has been optimized for mobile browsers -->
+        <meta name="HandheldFriendly" content="true">
+
+
+        <!--[if (gt IE 9)|!(IE)]><!-->
+        <link href="./css/style.min.css" rel="stylesheet" type="text/css">
+        <!--<![endif]-->
+
+        <meta property="og:title" content="" />
+        <meta property="og:url" content="" />
+        <meta property="og:description" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="500" />
+        <meta property="og:image:height" content="300" />
+        <meta property="twitter:description" content="" />
+        <link rel="image_src" href="" />
+
+        <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+        <script>
+            (function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)
+        </script>
+
+    </head>
+
+    <body class="page" style="visibility: hidden; opacity: 0;">
+
+        <header class="header">
+
+            <div class="wrapper header__cont">
+                <a href="#" class="header__cont-logo">
+                    <img src="./img/content/logo.png" alt="Логотип">
+                </a>
+                <div class="header__cont-right">
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0.0750203 8.9189C0.0745833 10.4907 0.487122 12.0254 1.27156 13.3781L0 18L4.75119 16.7598C6.06531 17.472 7.53768 17.8452 9.0339 17.8453H9.03784C13.9772 17.8453 17.9979 13.844 18 8.92593C18.0009 6.54278 17.0695 4.30182 15.3773 2.61584C13.6853 0.930001 11.4351 0.00108764 9.03747 0C4.09757 0 0.0771326 4.00105 0.0750932 8.9189"
+                            fill="url(#paint0_linear_0_49)" />
+                            <path d="M6.7186 5.05356C6.54482 4.66905 6.36193 4.66129 6.19667 4.65454C6.06134 4.64874 5.90664 4.64918 5.75208 4.64918C5.59738 4.64918 5.34602 4.70711 5.13356 4.93805C4.92088 5.16921 4.32159 5.72782 4.32159 6.86397C4.32159 8.00018 5.15286 9.09819 5.26874 9.25241C5.38477 9.40635 6.87352 11.8125 9.23135 12.7381C11.1909 13.5074 11.5897 13.3544 12.015 13.3158C12.4403 13.2774 13.3875 12.7574 13.5807 12.2181C13.7741 11.6789 13.7741 11.2168 13.7161 11.1202C13.6581 11.024 13.5034 10.9662 13.2714 10.8507C13.0394 10.7352 11.8989 10.1765 11.6863 10.0995C11.4737 10.0225 11.319 9.98403 11.1643 10.2153C11.0096 10.4461 10.5654 10.9662 10.43 11.1202C10.2947 11.2745 10.1593 11.2938 9.92743 11.1783C9.69531 11.0624 8.94824 10.8188 8.0619 10.0322C7.3723 9.42005 6.90674 8.66415 6.77141 8.43292C6.63608 8.20205 6.75691 8.0769 6.87323 7.96182C6.97746 7.85835 7.10529 7.69216 7.22139 7.55737C7.33705 7.4225 7.37565 7.32628 7.453 7.17227C7.53043 7.01812 7.49168 6.88325 7.43377 6.76775C7.37565 6.65224 6.92487 5.51015 6.7186 5.05356Z"
+                            fill="white" />
+                            <defs>
+                                <linearGradient id="paint0_linear_0_49" x1="900" y1="1800" x2="900" y2="0" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#1FAF38" />
+                                    <stop offset="1" stop-color="#60D669" />
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_0_52)">
+                                <path d="M9 0C6.61359 0 4.32281 0.948797 2.63672 2.63602C0.948885 4.3239 0.000467536 6.613 0 9C0 11.386 0.949219 13.6768 2.63672 15.364C4.32281 17.0512 6.61359 18 9 18C11.3864 18 13.6772 17.0512 15.3633 15.364C17.0508 13.6768 18 11.386 18 9C18 6.61402 17.0508 4.32323 15.3633 2.63602C13.6772 0.948797 11.3864 0 9 0Z"
+                                fill="url(#paint0_linear_0_52)" />
+                                <path d="M4.07388 8.90503C6.69795 7.76203 8.44732 7.00842 9.32201 6.64434C11.8223 5.6047 12.3412 5.42414 12.6801 5.41802C12.7547 5.41683 12.9206 5.43525 13.0289 5.52279C13.1189 5.59662 13.1442 5.69646 13.1569 5.76656C13.1681 5.83659 13.1836 5.9962 13.1709 6.1208C13.0359 7.54392 12.4495 10.9974 12.1514 12.5914C12.0262 13.2658 11.7773 13.4919 11.5369 13.514C11.0137 13.5621 10.6172 13.1686 10.1109 12.8369C9.3192 12.3176 8.87201 11.9944 8.10279 11.4877C7.21404 10.9022 7.7906 10.5803 8.29685 10.0544C8.42904 9.91669 10.7325 7.82208 10.7761 7.63209C10.7817 7.60833 10.7873 7.51973 10.7339 7.47305C10.6819 7.42622 10.6045 7.44225 10.5483 7.45491C10.4681 7.4729 9.20388 8.30934 6.75138 9.96408C6.39279 10.2107 6.06795 10.331 5.77545 10.3246C5.45482 10.3177 4.83607 10.143 4.37623 9.99361C3.81373 9.81037 3.36513 9.71348 3.40451 9.40228C3.4242 9.24028 3.64779 9.07448 4.07388 8.90503Z"
+                                fill="white" />
+                            </g>
+                            <defs>
+                                <linearGradient id="paint0_linear_0_52" x1="900" y1="0" x2="900" y2="1800" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#2AABEE" />
+                                    <stop offset="1" stop-color="#229ED9" />
+                                </linearGradient>
+                                <clipPath id="clip0_0_52">
+                                    <rect width="18" height="18" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </a>
+                    <a href="#">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.7812 0H4.21875C1.8888 0 0 1.8888 0 4.21875V13.7812C0 16.1112 1.8888 18 4.21875 18H13.7812C16.1112 18 18 16.1112 18 13.7812V4.21875C18 1.8888 16.1112 0 13.7812 0Z" fill="url(#paint0_radial_0_55)" />
+                            <path d="M13.7812 0H4.21875C1.8888 0 0 1.8888 0 4.21875V13.7812C0 16.1112 1.8888 18 4.21875 18H13.7812C16.1112 18 18 16.1112 18 13.7812V4.21875C18 1.8888 16.1112 0 13.7812 0Z" fill="url(#paint1_radial_0_55)" />
+                            <path d="M9.00063 1.96875C7.09109 1.96875 6.85139 1.97712 6.10144 2.01122C5.35289 2.04553 4.84193 2.16401 4.39488 2.33789C3.93237 2.51747 3.54009 2.75773 3.1493 3.14866C2.75815 3.53953 2.51789 3.9318 2.33775 4.39411C2.16338 4.8413 2.04476 5.35247 2.01108 6.10066C1.97754 6.85069 1.96875 7.09045 1.96875 9.00007C1.96875 10.9097 1.97719 11.1486 2.01122 11.8986C2.04567 12.6471 2.16415 13.1581 2.33789 13.6051C2.51761 14.0676 2.75787 14.4599 3.1488 14.8507C3.53953 15.2419 3.9318 15.4827 4.39397 15.6622C4.84137 15.8361 5.3524 15.9546 6.1008 15.9889C6.85083 16.023 7.09031 16.0314 8.99979 16.0314C10.9095 16.0314 11.1485 16.023 11.8984 15.9889C12.647 15.9546 13.1585 15.8361 13.6059 15.6622C14.0682 15.4827 14.4599 15.2419 14.8506 14.8507C15.2417 14.4599 15.4819 14.0676 15.6621 13.6053C15.8349 13.1581 15.9536 12.647 15.9888 11.8987C16.0225 11.1488 16.0312 10.9097 16.0312 9.00007C16.0312 7.09045 16.0225 6.85083 15.9888 6.1008C15.9536 5.35226 15.8349 4.84137 15.6621 4.39432C15.4819 3.9318 15.2417 3.53953 14.8506 3.14866C14.4595 2.75759 14.0683 2.51733 13.6055 2.33796C13.1572 2.16401 12.646 2.04546 11.8974 2.01122C11.1474 1.97712 10.9086 1.96875 8.99845 1.96875H9.00063ZM8.36986 3.23585C8.5571 3.23557 8.766 3.23585 9.00063 3.23585C10.878 3.23585 11.1005 3.2426 11.8419 3.27628C12.5274 3.30764 12.8995 3.42218 13.1474 3.51844C13.4755 3.64584 13.7095 3.79821 13.9554 4.04437C14.2015 4.29047 14.3538 4.52482 14.4816 4.85297C14.5778 5.10047 14.6925 5.47256 14.7237 6.15811C14.7574 6.89934 14.7647 7.12195 14.7647 8.99845C14.7647 10.875 14.7574 11.0976 14.7237 11.8388C14.6924 12.5243 14.5778 12.8964 14.4816 13.144C14.3542 13.4722 14.2015 13.7058 13.9554 13.9518C13.7093 14.1979 13.4757 14.3501 13.1474 14.4776C12.8998 14.5743 12.5274 14.6886 11.8419 14.7199C11.1007 14.7536 10.878 14.7609 9.00063 14.7609C7.12315 14.7609 6.90061 14.7536 6.15945 14.7199C5.4739 14.6883 5.1018 14.5737 4.85374 14.4775C4.52566 14.35 4.29124 14.1977 4.04515 13.9516C3.79905 13.7055 3.64676 13.4717 3.519 13.1434C3.42274 12.8959 3.30806 12.5238 3.27684 11.8382C3.24316 11.097 3.23641 10.8744 3.23641 8.9967C3.23641 7.11907 3.24316 6.89759 3.27684 6.15635C3.3082 5.4708 3.42274 5.09871 3.519 4.85086C3.64648 4.52271 3.79905 4.28836 4.04522 4.04227C4.29131 3.79617 4.52566 3.6438 4.85381 3.51612C5.10166 3.41944 5.4739 3.30518 6.15945 3.27368C6.80808 3.24436 7.05945 3.23557 8.36986 3.23409V3.23585ZM12.7539 4.40332C12.2881 4.40332 11.9102 4.7809 11.9102 5.24679C11.9102 5.71261 12.2881 6.09054 12.7539 6.09054C13.2197 6.09054 13.5977 5.71261 13.5977 5.24679C13.5977 4.78097 13.2197 4.40304 12.7539 4.40304V4.40332ZM9.00063 5.38917C7.00657 5.38917 5.3898 7.00594 5.3898 9.00007C5.3898 10.9942 7.00657 12.6102 9.00063 12.6102C10.9948 12.6102 12.611 10.9942 12.611 9.00007C12.611 7.00601 10.9946 5.38917 9.00049 5.38917H9.00063ZM9.00063 6.65627C10.295 6.65627 11.3444 7.70555 11.3444 9.00007C11.3444 10.2945 10.295 11.3439 9.00063 11.3439C7.70618 11.3439 6.65691 10.2945 6.65691 9.00007C6.65691 7.70555 7.70618 6.65627 9.00063 6.65627Z"
+                            fill="white" />
+                            <defs>
+                                <radialGradient id="paint0_radial_0_55" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.78125 19.3864) rotate(-90) scale(17.8393 16.592)">
+                                    <stop stop-color="#FFDD55" />
+                                    <stop offset="0.1" stop-color="#FFDD55" />
+                                    <stop offset="0.5" stop-color="#FF543E" />
+                                    <stop offset="1" stop-color="#C837AB" />
+                                </radialGradient>
+                                <radialGradient id="paint1_radial_0_55" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-3.01507 1.29663) rotate(78.681) scale(7.97428 32.8702)">
+                                    <stop stop-color="#3771C8" />
+                                    <stop offset="0.128" stop-color="#3771C8" />
+                                    <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                                </radialGradient>
+                            </defs>
+                        </svg>
+                    </a>
+                    <div class="header__cont-login popup-btn" data-popup="login">
+                        <p>Войти</p>
+                        <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.16104 6.72222C8.87923 6.72222 10.2721 5.32933 10.2721 3.61111C10.2721 1.89289 8.87923 0.5 7.16104 0.5C5.44282 0.5 4.04993 1.89289 4.04993 3.61111C4.04993 5.32933 5.44282 6.72222 7.16104 6.72222Z" fill="#343434" />
+                            <path d="M0.938965 12.1667C0.938965 13.4554 1.98364 14.5 3.2723 14.5H11.0501C12.3388 14.5 13.3834 13.4554 13.3834 12.1667C13.3834 10.878 12.2167 8.27778 7.16119 8.27778C2.10563 8.27778 0.938965 10.878 0.938965 12.1667Z" fill="#343434" />
+                        </svg>
+                    </div>
+                    <div class="yel-btn popup-btn" data-popup="part">
+                        Партнерство
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="search">
+            <div class="wrapper search__cont">
+                <h1>
+
+                Перевозка автомобилей
+
+            </h1>
+                <p>
+                    С нами ваш автомобиль всегда в правильном направлении
+                </p>
+                <div class="search__cont-ser">
+                    <div class="search__cont-ser-sel">
+                        <p>Откуда</p>
+                        <select class="search__cont-ser-from">
+                            <option data-display="Выбрать город">Выбрать город</option>
+                            <option value="1">Астана</option>
+                            <option value="2">Алматы</option>
+                            <option value="3">Павлодар</option>
+                            <option value="4">Экибастуз</option>
+                            <option value="5">Шымкент</option>
+                            <option value="6">Петропавловск</option>
+                            <option value="7">Усть-Каменогорск</option>
+                        </select>
+                    </div>
+                    <div class="search__cont-ser-sel">
+                        <p>Куда</p>
+                        <select class="search__cont-ser-where">
+                            <option data-display="Выбрать город">Выбрать город</option>
+                            <option value="1">Астана</option>
+                            <option value="2">Алматы</option>
+                            <option value="3">Павлодар</option>
+                            <option value="4">Экибастуз</option>
+                            <option value="5">Шымкент</option>
+                            <option value="6">Петропавловск</option>
+                            <option value="7">Усть-Каменогорск</option>
+                        </select>
+                    </div>
+                    <div class="yel-btn">
+                        <p>Найти маршруты</p>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 19L14.65 14.65M17.0001 9C17.0001 13.4183 13.4183 17 9.00006 17C4.58178 17 1.00006 13.4183 1.00006 9C1.00006 4.58172 4.58178 1 9.00006 1C13.4183 1 17.0001 4.58172 17.0001 9Z" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popular">
+            <div class="wrapper popular__cont">
+                <h2>
+
+                Популярные направления
+
+            </h2>
+                <div class="popular__cont-items">
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                    <a href="#" class="popular__cont-items-item">
+                        <p>
+                            Астана
+                        </p>
+                        <svg width="5" height="8" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1 7L4 4L1 1" stroke="#737373" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        <p>
+                            Шымкент
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="scheme">
+            <div class="wrapper scheme__cont">
+                <h2>
+
+                Схема работы
+
+            </h2>
+                <div class="scheme__cont-items">
+                    <div class="scheme__cont-items-line"></div>
+                    <div class="scheme__cont-items-item">
+                        <div class="scheme__cont-items-item-num">
+                            1
+                        </div>
+                        <p>
+                            Получение заявки
+                        </p>
+                    </div>
+                    <div class="scheme__cont-items-item">
+                        <div class="scheme__cont-items-item-num">
+                            2
+                        </div>
+                        <p>
+                            Оценка стоимости
+                        </p>
+                    </div>
+                    <div class="scheme__cont-items-item">
+                        <div class="scheme__cont-items-item-num">
+                            3
+                        </div>
+                        <p>
+                            Оформление договора
+                        </p>
+                    </div>
+                    <div class="scheme__cont-items-item">
+                        <div class="scheme__cont-items-item-num">
+                            4
+                        </div>
+                        <p>
+                            Загрузка автомобиля
+                        </p>
+                    </div>
+                    <div class="scheme__cont-items-item">
+                        <div class="scheme__cont-items-item-num">
+                            5
+                        </div>
+                        <p>
+                            Транспортировка автомобиля
+                        </p>
+                    </div>
+                    <div class="scheme__cont-items-item">
+                        <div class="scheme__cont-items-item-num">
+                            6
+                        </div>
+                        <p>
+                            Доставка автомобиля
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="que">
+            <div class="wrapper que__cont">
+                <h2>
+
+                Часто задаваемые вопросы
+
+            </h2>
+                <div class="que__cont-items">
+                    <div class="que__cont-item">
+                        <div class="que__cont-item-top">
+                            <p>
+                                1. Какие типы автомобилей вы можете транспортировать на автовозах?
+                            </p>
+                            <svg class="plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="minus" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="que__cont-item-text">
+                            Мы можем транспортировать любые типы автомобилей, включая легковые автомобили, грузовики, автобусы, специализированные автомобили и другие.
+                        </div>
+                    </div>
+                    <div class="que__cont-item">
+                        <div class="que__cont-item-top">
+                            <p>
+                                2. Как вы гарантируете безопасность моего автомобиля во время транспортировки?
+                            </p>
+                            <svg class="plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="minus" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="que__cont-item-text">
+                            Мы можем транспортировать любые типы автомобилей, включая легковые автомобили, грузовики, автобусы, специализированные автомобили и другие.
+                        </div>
+                    </div>
+                    <div class="que__cont-item">
+                        <div class="que__cont-item-top">
+                            <p>
+                                3. Как я могу оставить заявку на транспортировку моего автомобиля?
+                            </p>
+                            <svg class="plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="minus" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="que__cont-item-text">
+                            Мы можем транспортировать любые типы автомобилей, включая легковые автомобили, грузовики, автобусы, специализированные автомобили и другие.
+                        </div>
+                    </div>
+                    <div class="que__cont-item">
+                        <div class="que__cont-item-top">
+                            <p>
+                                4. Какова стоимость транспортировки автомобиля на автовозе?
+                            </p>
+                            <svg class="plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="minus" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="que__cont-item-text">
+                            Мы можем транспортировать любые типы автомобилей, включая легковые автомобили, грузовики, автобусы, специализированные автомобили и другие.
+                        </div>
+                    </div>
+                    <div class="que__cont-item">
+                        <div class="que__cont-item-top">
+                            <p>
+                                5. Как я могу отследить статус транспортировки моего автомобиля?
+                            </p>
+                            <svg class="plus" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 1V15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M1 8H15" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <svg class="minus" width="16" height="2" viewBox="0 0 16 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1H15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="que__cont-item-text">
+                            Мы можем транспортировать любые типы автомобилей, включая легковые автомобили, грузовики, автобусы, специализированные автомобили и другие.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pic">
+            <div class="wrapper pic__cont">
+                <div class="pic__cont-items">
+                    <div class="pic__cont-item">
+                        <div class="pic__cont-item-img">
+                            <img src="./img/content/p1.png">
+                        </div>
+                        <p>
+                            В автовоз помещается до 6 автомобилей
+                        </p>
+                    </div>
+                    <div class="pic__cont-item">
+                        <div class="pic__cont-item-img">
+                            <img src="./img/content/p2.png">
+                        </div>
+                        <p>
+                            В автовоз помещается до 6 автомобилей
+                        </p>
+                    </div>
+                    <div class="pic__cont-item">
+                        <div class="pic__cont-item-img">
+                            <img src="./img/content/p3.png">
+                        </div>
+                        <p>
+                            В автовоз помещается до 6 автомобилей
+                        </p>
+                    </div>
+                    <div class="pic__cont-item">
+                        <div class="pic__cont-item-img">
+                            <img src="./img/content/p4.png">
+                        </div>
+                        <p>
+                            В автовоз помещается до 6 автомобилей
+                        </p>
+                    </div>
+                    <div class="pic__cont-item">
+                        <div class="pic__cont-item-img">
+                            <img src="./img/content/p5.png">
+                        </div>
+                        <p>
+                            В автовоз помещается до 6 автомобилей
+                        </p>
+                    </div>
+                    <div class="pic__cont-item">
+                        <div class="pic__cont-item-img">
+                            <img src="./img/content/p6.png">
+                        </div>
+                        <p>
+                            В автовоз помещается до 6 автомобилей
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="wrapper about__cont">
+                <div class="about__cont-img">
+                    <img src="./img/content/about.png">
+                </div>
+                <div class="about__cont-text">
+                    <h2>
+
+                    О компании
+
+                </h2>
+                    <p>
+                        <b>Zholda.kz</b> - профессиональный перевозчик автомобилей на автовозах. Мы имеем богатый опыт в транспортировке автомобилей и предлагаем широкий спектр услуг для индивидуальных клиентов и компаний.
+                    </p>
+                    <p>
+                        Наша цель - обеспечить безопасную и надежную доставку автомобилей в любую точку страны. Для этого мы используем только современные и надежные автовозы, которые обеспечивают максимальную защиту вашего автомобиля во время транспортировки.
+                    </p>
+                    <p>
+                        Мы также гарантируем гибкую систему оплаты и оперативную обработку заказов. Мы всегда готовы ответить на ваши вопросы и предоставить необходимую информацию о вашем заказе.
+                    </p>
+                    <p>
+                        Наша команда профессионалов имеет многолетний опыт в транспортировке автомобилей, и мы готовы выполнить любые задачи связанные с транспортировкой автомобилей, начиная от индивидуальных перевозок до перевозок для автосалонов, дилеров и других компаний.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="wrapper footer__cont">
+                    <a href="#" class="footer__cont-logo">
+                        <img src="./img/content/logo.png" alt="Логотип">
+                    </a>
+                    <div class="footer__cont-list inf">
+                        <div class="footer__cont-list-title">
+                            Информация
+                        </div>
+                        <div class="footer__cont-list-item popup-btn" data-popup="login">
+                            Войти
+                        </div>
+                        <div class="footer__cont-list-item popup-btn" data-popup="part">
+                            Партнерство
+                        </div>
+                    </div>
+                    <div class="footer__cont-list cont">
+                        <div class="footer__cont-list-title">
+                            Контакты
+                        </div>
+                        <a href="tel:+777711111177" class="footer__cont-list-item">
+                            <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.9698 11.2304V13.4885C14.9707 13.6981 14.9277 13.9056 14.8437 14.0977C14.7598 14.2898 14.6366 14.4622 14.4821 14.6039C14.3277 14.7456 14.1453 14.8535 13.9467 14.9207C13.7481 14.9878 13.5377 15.0128 13.3289 14.9939C11.0127 14.7422 8.78788 13.9508 6.83311 12.6831C5.01446 11.5274 3.47255 9.98554 2.3169 8.16689C1.04482 6.20324 0.253179 3.96756 0.00610946 1.64096C-0.0127002 1.43282 0.0120369 1.22303 0.0787455 1.02497C0.145454 0.826907 0.252673 0.644904 0.393575 0.490549C0.534477 0.336194 0.705975 0.212869 0.897151 0.128425C1.08833 0.0439815 1.29499 0.000269792 1.50399 7.29762e-05H3.76209C4.12738 -0.00352226 4.48152 0.125833 4.75849 0.364029C5.03546 0.602224 5.21637 0.933007 5.26749 1.29472C5.3628 2.01736 5.53956 2.72691 5.79439 3.40981C5.89566 3.67922 5.91757 3.97202 5.85754 4.2535C5.79751 4.53498 5.65804 4.79336 5.45567 4.99801L4.49974 5.95394C5.57125 7.83837 7.13153 9.39864 9.01595 10.4702L9.97188 9.51422C10.1765 9.31185 10.4349 9.17238 10.7164 9.11235C10.9979 9.05232 11.2907 9.07423 11.5601 9.17551C12.243 9.43033 12.9525 9.60709 13.6752 9.7024C14.0408 9.75398 14.3747 9.93815 14.6134 10.2199C14.8521 10.5016 14.979 10.8612 14.9698 11.2304Z"
+                                fill="#46AABE" />
+                            </svg>
+                            +7 (777) 111 111 77
+                        </a>
+                        <a href="mailto:info@zholda.kz" class="footer__cont-list-item">
+                            <svg width="17" height="14" viewBox="0 0 17 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.5 1H2.5C1.67157 1 1 1.67157 1 2.5V11.5C1 12.3284 1.67157 13 2.5 13H14.5C15.3284 13 16 12.3284 16 11.5V2.5C16 1.67157 15.3284 1 14.5 1Z" fill="#46AABE" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M16 3.25L9.2725 7.525C9.04095 7.67007 8.77324 7.74701 8.5 7.74701C8.22676 7.74701 7.95905 7.67007 7.7275 7.525L1 3.25" fill="#46AABE" />
+                                <path d="M16 3.25L9.2725 7.525C9.04095 7.67007 8.77324 7.74701 8.5 7.74701C8.22676 7.74701 7.95905 7.67007 7.7275 7.525L1 3.25" stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            info@zholda.kz
+                        </a>
+                        <div class="footer__cont-list-item">
+                            <svg width="17" height="21" viewBox="0 0 17 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16 8.5C16 14.125 8.5 19.75 8.5 19.75C8.5 19.75 1 14.125 1 8.5C1 6.51088 1.79018 4.60322 3.1967 3.1967C4.60322 1.79018 6.51088 1 8.5 1C10.4891 1 12.3968 1.79018 13.8033 3.1967C15.2098 4.60322 16 6.51088 16 8.5Z" fill="#46AABE" stroke="white"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.5 11.3125C10.0533 11.3125 11.3125 10.0533 11.3125 8.5C11.3125 6.9467 10.0533 5.6875 8.5 5.6875C6.9467 5.6875 5.6875 6.9467 5.6875 8.5C5.6875 10.0533 6.9467 11.3125 8.5 11.3125Z" fill="white" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+                                />
+                            </svg>
+                            г. Астана, ул. Сыганак 26
+                        </div>
+                    </div>
+                    <div class="footer__cont-soc">
+                        <p>
+                            Мы в соц. сетях
+                        </p>
+                        <div class="footer__cont-soc-items">
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.7812 0H4.21875C1.8888 0 0 1.8888 0 4.21875V13.7812C0 16.1112 1.8888 18 4.21875 18H13.7812C16.1112 18 18 16.1112 18 13.7812V4.21875C18 1.8888 16.1112 0 13.7812 0Z" fill="url(#paint0_radial_0_181)" />
+                                    <path d="M13.7812 0H4.21875C1.8888 0 0 1.8888 0 4.21875V13.7812C0 16.1112 1.8888 18 4.21875 18H13.7812C16.1112 18 18 16.1112 18 13.7812V4.21875C18 1.8888 16.1112 0 13.7812 0Z" fill="url(#paint1_radial_0_181)" />
+                                    <path d="M9.00063 1.96875C7.09109 1.96875 6.85139 1.97712 6.10144 2.01122C5.35289 2.04553 4.84193 2.16401 4.39488 2.33789C3.93237 2.51747 3.54009 2.75773 3.1493 3.14866C2.75815 3.53953 2.51789 3.9318 2.33775 4.39411C2.16338 4.8413 2.04476 5.35247 2.01108 6.10066C1.97754 6.85069 1.96875 7.09045 1.96875 9.00007C1.96875 10.9097 1.97719 11.1486 2.01122 11.8986C2.04567 12.6471 2.16415 13.1581 2.33789 13.6051C2.51761 14.0676 2.75787 14.4599 3.1488 14.8507C3.53953 15.2419 3.9318 15.4827 4.39397 15.6622C4.84137 15.8361 5.3524 15.9546 6.1008 15.9889C6.85083 16.023 7.09031 16.0314 8.99979 16.0314C10.9095 16.0314 11.1485 16.023 11.8984 15.9889C12.647 15.9546 13.1585 15.8361 13.6059 15.6622C14.0682 15.4827 14.4599 15.2419 14.8506 14.8507C15.2417 14.4599 15.4819 14.0676 15.6621 13.6053C15.8349 13.1581 15.9536 12.647 15.9888 11.8987C16.0225 11.1488 16.0312 10.9097 16.0312 9.00007C16.0312 7.09045 16.0225 6.85083 15.9888 6.1008C15.9536 5.35226 15.8349 4.84137 15.6621 4.39432C15.4819 3.9318 15.2417 3.53953 14.8506 3.14866C14.4595 2.75759 14.0683 2.51733 13.6055 2.33796C13.1572 2.16401 12.646 2.04546 11.8974 2.01122C11.1474 1.97712 10.9086 1.96875 8.99845 1.96875H9.00063ZM8.36986 3.23585C8.5571 3.23557 8.766 3.23585 9.00063 3.23585C10.878 3.23585 11.1005 3.2426 11.8419 3.27628C12.5274 3.30764 12.8995 3.42218 13.1474 3.51844C13.4755 3.64584 13.7095 3.79821 13.9554 4.04437C14.2015 4.29047 14.3538 4.52482 14.4816 4.85297C14.5778 5.10047 14.6925 5.47256 14.7237 6.15811C14.7574 6.89934 14.7647 7.12195 14.7647 8.99845C14.7647 10.875 14.7574 11.0976 14.7237 11.8388C14.6924 12.5243 14.5778 12.8964 14.4816 13.144C14.3542 13.4722 14.2015 13.7058 13.9554 13.9518C13.7093 14.1979 13.4757 14.3501 13.1474 14.4776C12.8998 14.5743 12.5274 14.6886 11.8419 14.7199C11.1007 14.7536 10.878 14.7609 9.00063 14.7609C7.12315 14.7609 6.90061 14.7536 6.15945 14.7199C5.4739 14.6883 5.1018 14.5737 4.85374 14.4775C4.52566 14.35 4.29124 14.1977 4.04515 13.9516C3.79905 13.7055 3.64676 13.4717 3.519 13.1434C3.42274 12.8959 3.30806 12.5238 3.27684 11.8382C3.24316 11.097 3.23641 10.8744 3.23641 8.9967C3.23641 7.11907 3.24316 6.89759 3.27684 6.15635C3.3082 5.4708 3.42274 5.09871 3.519 4.85086C3.64648 4.52271 3.79905 4.28836 4.04522 4.04227C4.29131 3.79617 4.52566 3.6438 4.85381 3.51612C5.10166 3.41944 5.4739 3.30518 6.15945 3.27368C6.80808 3.24436 7.05945 3.23557 8.36986 3.23409V3.23585ZM12.7539 4.40332C12.2881 4.40332 11.9102 4.7809 11.9102 5.24679C11.9102 5.71261 12.2881 6.09054 12.7539 6.09054C13.2197 6.09054 13.5977 5.71261 13.5977 5.24679C13.5977 4.78097 13.2197 4.40304 12.7539 4.40304V4.40332ZM9.00063 5.38917C7.00657 5.38917 5.3898 7.00594 5.3898 9.00007C5.3898 10.9942 7.00657 12.6102 9.00063 12.6102C10.9948 12.6102 12.611 10.9942 12.611 9.00007C12.611 7.00601 10.9946 5.38917 9.00049 5.38917H9.00063ZM9.00063 6.65627C10.295 6.65627 11.3444 7.70555 11.3444 9.00007C11.3444 10.2945 10.295 11.3439 9.00063 11.3439C7.70618 11.3439 6.65691 10.2945 6.65691 9.00007C6.65691 7.70555 7.70618 6.65627 9.00063 6.65627Z"
+                                    fill="white" />
+                                    <defs>
+                                        <radialGradient id="paint0_radial_0_181" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(4.78125 19.3864) rotate(-90) scale(17.8393 16.592)">
+                                            <stop stop-color="#FFDD55" />
+                                            <stop offset="0.1" stop-color="#FFDD55" />
+                                            <stop offset="0.5" stop-color="#FF543E" />
+                                            <stop offset="1" stop-color="#C837AB" />
+                                        </radialGradient>
+                                        <radialGradient id="paint1_radial_0_181" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(-3.01507 1.29663) rotate(78.681) scale(7.97428 32.8702)">
+                                            <stop stop-color="#3771C8" />
+                                            <stop offset="0.128" stop-color="#3771C8" />
+                                            <stop offset="1" stop-color="#6600FF" stop-opacity="0" />
+                                        </radialGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0.0746843 8.9189C0.0742492 10.4907 0.48494 12.0254 1.26586 13.3781L0 18L4.72991 16.7598C6.03814 17.472 7.50391 17.8452 8.99344 17.8453H8.99735C13.9146 17.8453 17.9173 13.844 17.9194 8.92593C17.9203 6.54278 16.9931 4.30182 15.3084 2.61584C13.624 0.930001 11.3838 0.00108764 8.99699 0C4.07921 0 0.0767871 4.00105 0.0747568 8.9189"
+                                    fill="url(#paint0_linear_0_185)" />
+                                    <path d="M6.68858 5.05356C6.51557 4.66905 6.3335 4.66129 6.16898 4.65454C6.03426 4.64874 5.88025 4.64918 5.72638 4.64918C5.57237 4.64918 5.32215 4.70711 5.11064 4.93805C4.89891 5.16921 4.30231 5.72782 4.30231 6.86397C4.30231 8.00018 5.12985 9.09819 5.24521 9.25241C5.36072 9.40635 6.84281 11.8125 9.19007 12.7381C11.1408 13.5074 11.5378 13.3544 11.9612 13.3158C12.3847 13.2774 13.3276 12.7574 13.5199 12.2181C13.7125 11.6789 13.7125 11.2168 13.6547 11.1202C13.597 11.024 13.443 10.9662 13.2121 10.8507C12.9811 10.7352 11.8457 10.1765 11.6341 10.0995C11.4223 10.0225 11.2684 9.98403 11.1144 10.2153C10.9604 10.4461 10.5181 10.9662 10.3833 11.1202C10.2487 11.2745 10.1139 11.2938 9.88304 11.1783C9.65195 11.0624 8.90822 10.8188 8.02586 10.0322C7.33935 9.42005 6.87587 8.66415 6.74115 8.43292C6.60643 8.20205 6.72672 8.0769 6.84252 7.96182C6.94628 7.85835 7.07353 7.69216 7.18911 7.55737C7.30425 7.4225 7.34268 7.32628 7.41969 7.17227C7.49676 7.01812 7.45819 6.88325 7.40054 6.76775C7.34268 6.65224 6.89392 5.51015 6.68858 5.05356Z"
+                                    fill="white" />
+                                    <defs>
+                                        <linearGradient id="paint0_linear_0_185" x1="895.969" y1="1800" x2="895.969" y2="0" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#1FAF38" />
+                                            <stop offset="1" stop-color="#60D669" />
+                                        </linearGradient>
+                                    </defs>
+                                </svg>
+                            </a>
+                            <a href="#">
+                                <svg width="19" height="18" viewBox="0 0 19 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_0_188)">
+                                        <path d="M9.91937 0C7.53297 0 5.24219 0.948797 3.55609 2.63602C1.86826 4.3239 0.91984 6.613 0.919373 9C0.919373 11.386 1.86859 13.6768 3.55609 15.364C5.24219 17.0512 7.53297 18 9.91937 18C12.3058 18 14.5966 17.0512 16.2827 15.364C17.9702 13.6768 18.9194 11.386 18.9194 9C18.9194 6.61402 17.9702 4.32323 16.2827 2.63602C14.5966 0.948797 12.3058 0 9.91937 0Z"
+                                        fill="url(#paint0_linear_0_188)" />
+                                        <path d="M4.99326 8.90491C7.61732 7.76191 9.36669 7.0083 10.2414 6.64422C12.7417 5.60458 13.2606 5.42402 13.5995 5.4179C13.674 5.4167 13.84 5.43513 13.9483 5.52267C14.0383 5.59649 14.0636 5.69634 14.0762 5.76644C14.0875 5.83647 14.1029 5.99608 14.0903 6.12067C13.9553 7.5438 13.3689 10.9973 13.0708 12.5913C12.9456 13.2657 12.6967 13.4918 12.4562 13.5139C11.9331 13.562 11.5365 13.1685 11.0303 12.8368C10.2386 12.3175 9.79138 11.9943 9.02216 11.4876C8.13341 10.9021 8.70997 10.5802 9.21622 10.0542C9.34841 9.91656 11.6518 7.82195 11.6954 7.63197C11.7011 7.6082 11.7067 7.51961 11.6533 7.47292C11.6012 7.4261 11.5239 7.44213 11.4676 7.45478C11.3875 7.47278 10.1233 8.30922 7.67076 9.96395C7.31216 10.2106 6.98732 10.3308 6.69482 10.3245C6.37419 10.3176 5.75544 10.1428 5.2956 9.99349C4.7331 9.81025 4.28451 9.71336 4.32388 9.40216C4.34357 9.24016 4.56716 9.07436 4.99326 8.90491Z"
+                                        fill="white" />
+                                    </g>
+                                    <defs>
+                                        <linearGradient id="paint0_linear_0_188" x1="900.919" y1="0" x2="900.919" y2="1800" gradientUnits="userSpaceOnUse">
+                                            <stop stop-color="#2AABEE" />
+                                            <stop offset="1" stop-color="#229ED9" />
+                                        </linearGradient>
+                                        <clipPath id="clip0_0_188">
+                                            <rect width="18" height="18" fill="white" transform="translate(0.919373)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper footer__bot">
+                <div class="footer__bot-cop">
+                    Zholda.kz 2023, © Все права защищены
+                </div>
+                <a href="https://astanacreative.kz/" class="footer__bot-made">
+
+                Разработано в Astana Creative
+
+            </a>
+            </div>
+        </footer>
+
+        <a href="#" class="what">
+            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0.150041 17.8378C0.149167 20.9814 0.974245 24.0508 2.54312 26.7563L0 36L9.50238 33.5196C12.1306 34.944 15.0754 35.6903 18.0678 35.6905H18.0757C27.9543 35.6905 35.9958 27.688 36 17.8519C36.0019 13.0856 34.1391 8.60363 30.7546 5.23167C27.3706 1.86 22.8701 0.00217527 18.0749 0C8.19514 0 0.154265 8.00209 0.150186 17.8378"
+                fill="url(#paint0_linear_0_207)" />
+                <path d="M13.4376 10.1066C13.09 9.3376 12.7242 9.32208 12.3937 9.3086C12.123 9.297 11.8136 9.29787 11.5045 9.29787C11.1951 9.29787 10.6924 9.41374 10.2675 9.87562C9.84213 10.3379 8.64355 11.4552 8.64355 13.7274C8.64355 15.9999 10.3061 18.1959 10.5379 18.5043C10.7699 18.8122 13.7474 23.6245 18.4631 25.4758C22.3822 27.0143 23.1797 26.7083 24.0303 26.6311C24.881 26.5543 26.7753 25.5142 27.1618 24.4357C27.5485 23.3574 27.5485 22.433 27.4326 22.2399C27.3166 22.0474 27.0072 21.9318 26.5433 21.701C26.0792 21.47 23.7982 20.3526 23.373 20.1984C22.9477 20.0444 22.6384 19.9676 22.329 20.43C22.0196 20.8918 21.1312 21.9318 20.8604 22.2399C20.5898 22.5486 20.319 22.587 19.8552 22.356C19.391 22.1243 17.8968 21.6372 16.1242 20.0639C14.745 18.8396 13.8138 17.3278 13.5432 16.8653C13.2725 16.4036 13.5142 16.1533 13.7468 15.9232C13.9553 15.7162 14.2109 15.3838 14.4431 15.1142C14.6745 14.8445 14.7517 14.6521 14.9064 14.3441C15.0612 14.0357 14.9837 13.766 14.8679 13.535C14.7517 13.304 13.8501 11.0198 13.4376 10.1066Z"
+                fill="white" />
+                <defs>
+                    <linearGradient id="paint0_linear_0_207" x1="1800" y1="3600" x2="1800" y2="0" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#1FAF38" />
+                        <stop offset="1" stop-color="#60D669" />
+                    </linearGradient>
+                </defs>
+            </svg>
+        </a>
+
+        <div class="popups">
+            <div class="blur"></div>
+            <div class="popup__cont popup__login">
+                <div class="popup__cont-close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 1L1 13" stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 1L13 13" stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2>
+
+                Профиль
+
+            </h2>
+                <form class="popup__login-form">
+                    <input type="text" name="login" id="login" placeholder="Логин">
+                    <input type="password" name="password" id="password" placeholder="Пароль">
+                    <button class="yel-btn">
+                        Войти
+                    </button>
+                    <a class="popup__login-pass" href="#">Забыли пароль?</a>
+                </form>
+            </div>
+            <div class="popup__cont popup__part">
+                <div class="popup__cont-close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 1L1 13" stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M1 1L13 13" stroke="#343434" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <h2>
+
+                Партнерство
+
+            </h2>
+                <form class="popup__part-form">
+                    <input type="text" name="name" id="name" placeholder="Имя">
+                    <input type="text" name="phone" id="phone" placeholder="Телефон" data-tel-input>
+                    <button class="yel-btn">
+                        Оставить заявку
+                    </button>
+                </form>
+            </div>
+        </div>
+        <!-- Main scripts. You can replace it, but I recommend you to leave it here     -->
+        <!-- <script src="	" type="text/javascript"></script> -->
+        <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="./js/main.js"></script>
+
+
+    </body>
+
+</html>
