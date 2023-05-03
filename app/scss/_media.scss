@@ -153,9 +153,13 @@
     }
   }
 
-  .area-info {
-    width: 900px;
+  .area-info__schedule {
+    overflow-x: scroll;
   }
+
+  // .area-info {
+  //   width: 900px;
+  // }
 
   .area-info__btn-edit {
     display: none;
@@ -750,7 +754,6 @@
   }
 
   .header__area {
-
     .popup-btn,
     .yel-btn {
       display: block;

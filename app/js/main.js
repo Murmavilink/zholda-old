@@ -1780,24 +1780,24 @@ $(document).ready(function () {
 		const dateItems = document.querySelectorAll('.cards__day');
 		const contentItems = document.querySelectorAll('.cards__place-wrap');
 		const arrowBtn = document.querySelector('.cards__circle-arrow');
-	
-	
+
+
 		const removeClassActive = (items, btnActiveClass, contents, contentActiveClass) => {
 			for (let i = 0; i < contents.length; i++) {
 				items[i].classList.remove(btnActiveClass);
-	
+
 				contents[i].classList.remove(contentActiveClass);
 			}
 		}
-	
+
 		const addClassActive = (item, proporty, btnClassActive, contentActiveClass) => {
 			const id = item.dataset[proporty];
 			const content = document.getElementById(id);
-	
+
 			item.classList.add(btnClassActive);
 			content.classList.add(contentActiveClass);
 		}
-	
+
 		const handlerClickArrow = (idNum) => {
 			if (idNum < dateItems.length) {
 				dateItems[idNum].classList.add('cards__day--active');
@@ -1807,35 +1807,126 @@ $(document).ready(function () {
 				contentItems[0].classList.add('cards__place-wrap--active');
 			}
 		}
-	
-	
-	
+
+
+
 		tabBtns.forEach(btn => {
 			btn.addEventListener('click', (e) => {
 				removeClassActive(tabBtns, 'tabs__top-btn--active', tabContents, 'tabs__content-item--active');
 				addClassActive(btn, 'item', 'tabs__top-btn--active', 'tabs__content-item--active');
 			});
 		})
-	
-	
+
+
 		dateItems.forEach(item => {
 			item.addEventListener('click', () => {
 				removeClassActive(dateItems, 'cards__day--active', contentItems, 'cards__place-wrap--active');
 				addClassActive(item, 'day', 'cards__day--active', 'cards__place-wrap--active');
 			})
 		});
-	
-		
+
+
 		arrowBtn.addEventListener('click', () => {
 			const idNum = document.querySelector('.cards__day--active').dataset.day.substring(14);
-	
+
 			removeClassActive(dateItems, 'cards__day--active', contentItems, 'cards__place-wrap--active');
 			handlerClickArrow(idNum);
 		});
-	
+
 	}
 
 
-	tabs();
+	// tabs();
+
+
+	const daySwitcher = () => {
+
+		const scheduleWrap = document.querySelector('.area-info__schedule-item-calendar');
+		const scheduleColumns = document.querySelectorAll('.area-info__schedule-column');
+
+		let arrowBtnRight = document.querySelector('.area-info__arrow-wrap-right');
+		let arrowBtnLeft;
+
+		let count = 0;
+
+		const addArrow = () => {
+			if (count > 0 && !document.querySelector('.area-info__arrow-wrap-left')) {
+				scheduleWrap.insertAdjacentHTML('beforeend', `
+				<div class="area-info__arrow-wrap-left">
+					<div class="area-info__circle-arrow">
+						<svg width="10" height="18" viewBox="0 0 10 18" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path d="M1 17L9 9L0.999999 1" stroke="#46AABE" stroke-width="1.5"
+								stroke-linecap="round" stroke-linejoin="round"></path>
+						</svg>
+					</div>
+				</div>`)
+			}
+		}
+
+
+		const removeArrow = () => {
+			const arrowBtnLeft = document.querySelector('.area-info__arrow-wrap-left');
+
+			arrowBtnLeft.remove();
+		}
+
+
+		const handlerColums = () => {
+			let countColumn = 0;
+
+
+			scheduleColumns.forEach(column => {
+				if(!column.classList.contains('hidden')) {
+					countColumn++
+				}
+			});
+
+
+			if(countColumn === 15) {
+				arrowBtnRight.style.display = 'none';
+			} else if(countColumn === 16) {
+				arrowBtnRight.style.display = 'flex';
+			}
+
+			console.log(countColumn);
+		}
+
+
+		scheduleWrap.addEventListener('click', (e) => {
+			if (e.target.closest('.area-info__arrow-wrap-right')) {
+
+				scheduleColumns[count].classList.add('hidden');
+
+				count++;
+
+				// console.log(count);
+
+				handlerColums();
+				addArrow();
+
+			} else if (e.target.closest('.area-info__arrow-wrap-left')) {
+				handlerColums();
+				count--;
+
+				if (count >= 0) {
+					scheduleColumns[count].classList.remove('hidden');
+				} else {
+					count = 0;
+					removeArrow();
+				}
+
+			}
+
+
+
+		});
+
+
+
+	}
+
+	daySwitcher();
+
 })
 
