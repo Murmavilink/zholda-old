@@ -1809,6 +1809,15 @@ $(document).ready(function () {
 
 
 
+
+
+
+
+
+
+
+
+
 const dateWrap = document.querySelector('.cards__days');
 const dateItems = document.querySelectorAll('.cards__day');
 const contentItems = document.querySelectorAll('.cards__place-wrap');
@@ -1826,8 +1835,7 @@ const removeClassActive = () => {
 }
 
 
-dateItems.forEach((item, index) => {
-
+dateItems.forEach(item => {
 	item.addEventListener('click', () => {
 		removeClassActive();
 		const id = item.dataset.day;
@@ -1836,48 +1844,20 @@ dateItems.forEach((item, index) => {
 		item.classList.add('cards__day--active');
 		content.classList.add('cards__place-wrap--active');
 	})
-
 });
 
 
 
 circleArrow.addEventListener('click', () => {
-	let id = document.querySelector('.cards__day--active').dataset.day.substring(4);
+	const idNum = document.querySelector('.cards__day--active').dataset.day.substring(14);
 	
 	removeClassActive();
 
-
-	if(id == 7) {
-		dateItems[0].classList.add('cards__day--active');
+	if(idNum < dateItems.length) {
+		dateItems[idNum].classList.add('cards__day--active');
+		contentItems[idNum].classList.add('cards__place-wrap--active');
 	} else {
-		dateItems[id].classList.add('cards__day--active');
+		dateItems[0].classList.add('cards__day--active');
+		contentItems[0].classList.add('cards__place-wrap--active');
 	}
-	
-
-
-	console.log(dateItems.length);
-	console.log(id);
 });
-
-
-
-// dateWrap.addEventListener('click', (e) => {
-
-// 	if(e.target.closest('.cards__day')) {
-// 		removeClassActive();
-
-// 		const id = e.target.closest('.cards__day').dataset.day;
-// 		const content = document.getElementById(id);
-
-// 		e.target.closest('.cards__day').classList.add('cards__day--active');
-// 		content.classList.add('cards__place-wrap--active');
-// 	} else if(e.target.closest('.cards__circle-arrow')) {
-// 		console.log('arrow');
-
-// 		const dayActive = document.querySelector('.cards__day--active');
-	
-// 		console.log(dayActive.nextElementSibling);
-		
-// 	}
-
-// });
