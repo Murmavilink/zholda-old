@@ -1124,11 +1124,18 @@
       padding: 10.5px 0;
       row-gap: 0;
     }
-
-    &__circle-arrow-wrap {
-      display: none;
+    
+    &__circle-arrow {
+      width: 28px;
+      height: 26px;
+      padding: 0px;
+      margin-left: 12px;
+      svg {
+        width: 10px;
+        height: 10px;
+      }
     }
-
+    
     &__schedule-count {
       width: 54px;
     }

@@ -1398,27 +1398,6 @@
     align-items: center;
     justify-content: center;
   }
-  
-  &__circle-arrow-wrap {
-    padding: 11.5px 10px;
-    background-color: #fff;
-    height: 70px;
-  }
-
-  &__circle-mobile {
-    display: none;
-    position: absolute;
-    left: 295px;
-    z-index: 10;
-    height: 49px;
-    width: 54px;
-    border-radius: 6px 6px 0px 0px;
-    .area-info__circle-arrow {
-      width: 28px;
-      height: 28px;
-      padding: 9px 12px;
-    }
-  }
 
   &__circle-arrow {
     width: 40px;
@@ -1430,7 +1409,8 @@
     justify-content: center;
     align-items: center;
     background-color: #fff;
-   
+    margin-left: 9px;
+    cursor: pointer;
     svg {
       width: 10px;
       height: 18px;
