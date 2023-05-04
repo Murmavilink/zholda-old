@@ -27,6 +27,8 @@ function images() {
 
 function scripts() {
     return src([
+        './app/js/tabs.js',
+        './app/js/daySwitcher.js',
         './app/js/main.js'
         ])
         .pipe(concat('main.min.js'))
