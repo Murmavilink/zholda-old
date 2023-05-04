@@ -924,12 +924,6 @@
     }
   }
 
-  &__about-img {
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-  }
-
   &__about-inner {
     padding-left: 30px;
     padding-bottom: 40px;
@@ -1225,6 +1219,7 @@
     width: 80px;
     height: 80px;
     border-radius: 100%;
+    object-fit: cover;
   }
 
   &__item-content-top {
@@ -1276,12 +1271,6 @@
     align-items: center;
     column-gap: 30px;
     margin-bottom: 50px;
-  }
-
-  &__img {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
   }
 
   &__title {

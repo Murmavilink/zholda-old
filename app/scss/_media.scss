@@ -717,11 +717,6 @@
       padding-left: 0;
     }
 
-    &__about-img {
-      width: 50px;
-      height: 50px;
-    }
-
     &__about-inner {
       display: flex;
       flex-wrap: wrap;
@@ -738,6 +733,11 @@
     &__about-item-tel {
       margin-left: 0;
     }
+  }
+
+  .image-circle {
+    width: 50px;
+    height: 50px;
   }
 
   .about-company__wrap {
@@ -758,6 +758,11 @@
     .yel-btn {
       display: block;
     }
+  }
+
+  .area-info__title {
+    font-size: 16px;
+    line-height: 21.6px;
   }
 
   ////////////////// media
@@ -929,11 +934,6 @@
 
   .about-company__descr {
     font-size: 12px;
-    line-height: 21.6px;
-  }
-
-  .area-info__title {
-    font-size: 16px;
     line-height: 21.6px;
   }
 
