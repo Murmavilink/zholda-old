@@ -1840,93 +1840,56 @@ $(document).ready(function () {
 
 
 	const daySwitcher = () => {
-
 		const scheduleWrap = document.querySelector('.area-info__schedule-item-calendar');
 		const scheduleColumns = document.querySelectorAll('.area-info__schedule-column');
-
-		let arrowBtnRight = document.querySelector('.area-info__arrow-wrap-right');
-		let arrowBtnLeft;
+		const arrowBtnRight = document.querySelector('.area-info__arrow-wrap-right');
+		const arrowBtnLeft = document.querySelector('.area-info__arrow-wrap-left');
 
 		let count = 0;
 
-		const addArrow = () => {
-			if (count > 0 && !document.querySelector('.area-info__arrow-wrap-left')) {
-				scheduleWrap.insertAdjacentHTML('beforeend', `
-				<div class="area-info__arrow-wrap-left">
-					<div class="area-info__circle-arrow">
-						<svg width="10" height="18" viewBox="0 0 10 18" fill="none"
-							xmlns="http://www.w3.org/2000/svg">
-							<path d="M1 17L9 9L0.999999 1" stroke="#46AABE" stroke-width="1.5"
-								stroke-linecap="round" stroke-linejoin="round"></path>
-						</svg>
-					</div>
-				</div>`)
-			}
+
+		const showArrow = () => {
+			if (count > 0 && arrowBtnLeft.style.display == 'none') arrowBtnLeft.style.display = 'flex';
 		}
 
 
-		const removeArrow = () => {
-			const arrowBtnLeft = document.querySelector('.area-info__arrow-wrap-left');
+	    const hideArrow = () => {
+			count = 0;
 
-			arrowBtnLeft.remove();
+			arrowBtnLeft.style.display = 'none';
 		}
 
 
 		const handlerColums = () => {
-			let countColumn = 0;
-
+			let columnCount = 0;
 
 			scheduleColumns.forEach(column => {
-				if(!column.classList.contains('hidden')) {
-					countColumn++
-				}
+				if(!column.classList.contains('hidden')) columnCount++
 			});
 
-
-			if(countColumn === 15) {
-				arrowBtnRight.style.display = 'none';
-			} else if(countColumn === 16) {
-				arrowBtnRight.style.display = 'flex';
-			}
-
-			console.log(countColumn);
+			columnCount === 15 ? arrowBtnRight.style.display = 'none': columnCount === 16 ? arrowBtnRight.style.display = 'flex': '';
 		}
 
 
 		scheduleWrap.addEventListener('click', (e) => {
 			if (e.target.closest('.area-info__arrow-wrap-right')) {
-
 				scheduleColumns[count].classList.add('hidden');
 
 				count++;
 
-				// console.log(count);
-
 				handlerColums();
-				addArrow();
-
+				showArrow();
 			} else if (e.target.closest('.area-info__arrow-wrap-left')) {
-				handlerColums();
 				count--;
 
-				if (count >= 0) {
-					scheduleColumns[count].classList.remove('hidden');
-				} else {
-					count = 0;
-					removeArrow();
-				}
+				count >= 0 ? scheduleColumns[count].classList.remove('hidden') : hideArrow();
 
+				handlerColums();
 			}
-
-
-
 		});
-
-
-
 	}
 
-	daySwitcher();
 
+	daySwitcher();
 })
 

@@ -1100,13 +1100,12 @@
     }
 
     &__schedule-wrap {
-      width: 1050px;
+      width: 1100px;
     }
 
     &__schedule-item {
       &:first-child {
-        flex-basis: 240px;
-        flex-shrink: 0;
+        width: 240px;
       }
     }
 
@@ -1115,11 +1114,11 @@
     }
 
     &__schedule-city,
-    &__schedule-count {
+    &__schedule-input-count {
       height: 39px;
     }
 
-    &__schedule-day {
+    &__schedule-column-day {
       width: 54px;
       height: 49px;
       font-size: 12px;
@@ -1139,12 +1138,20 @@
       }
     }
     
-    &__schedule-count {
+    &__schedule-input-count {
       width: 54px;
+      font-size: 12px;
+      line-height: 21.6px;
     }
 
-    &__circle-mobile {
-      display: block;
+    &__arrow-wrap-left, 
+    &__arrow-wrap-right {
+      width: 54px;
+      height: 49px;
+    }
+
+    &__arrow-wrap-right {
+      right: 6px;
     }
 
     &__schedule-city,

@@ -1314,11 +1314,13 @@
   &__schedule-item {
     &:first-child {
       width: 330px;
+      flex-shrink: 0;
     }
 
     &:last-child {
       position: relative;
       width: 870px;
+      flex-shrink: 0;
     }
   }
 
@@ -1350,6 +1352,7 @@
   }
 
   &__arrow-wrap-left {
+    display: none;
     left: 0;
     transform: rotate(-180deg);
   }
@@ -1373,7 +1376,7 @@
     justify-content: center;
   }
 
-  &__schedule-column-count {
+  &__schedule-input-count {
     padding: 15px;
     text-align: center;
     border-width: 0px 1px 1px 1px;
