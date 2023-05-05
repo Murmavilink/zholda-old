@@ -147,6 +147,11 @@
     &__item-inner {
       flex-direction: column;
     }
+    
+    &__days {
+      justify-content: flex-start;
+      column-gap: 10px;
+    }
 
     &__type {
       margin-bottom: 30px;
@@ -867,24 +872,24 @@
     }
 
     &__day {
-      padding: 15px 13px;
+      padding: 15px 21px;
 
       span {
         font-size: 12px;
         line-height: 21.6px;
       }
     }
-
-    &__circle-arrow {
-      width: 19px;
-      height: 18px;
-      margin-left: 4px;
+    
+    &__circle-arrow-right, &__circle-arrow-left {
+      width: 30px;
+      height: 30px;
+      // margin-left: 4px;
       padding: 6px;
-      background-color: #fff;
+      // background-color: #fff;
 
       svg {
-        width: 6px;
-        height: 6px;
+        width: 16px;
+        height: 16px;
       }
     }
 
@@ -892,6 +897,7 @@
       padding: 15px 24px;
       margin-right: 0;
     }
+
   }
 
   .btn-wrap {
@@ -940,6 +946,38 @@
   ////////////////// media
 }
 
+@media screen and (max-width: 532px) {
+  .cards {
+
+    &__days {
+      column-gap: 5px;
+    }
+
+    &__day {
+      padding: 15px 13px;
+      flex-basis: 40px;
+      span {
+        font-size: 12px;
+        line-height: 21.6px;
+      }
+    }
+    
+    &__circle-arrow-right, &__circle-arrow-left {
+      width: 19px;
+      height: 18px;
+      padding: 6px;
+      svg {
+        width: 6px;
+        height: 6px;
+      }
+    }
+
+    &__place-wrap {
+      width: auto;
+    }
+
+  }
+}
 
 @media screen and (max-width: 450px) {
   .popular__cont-items-item {

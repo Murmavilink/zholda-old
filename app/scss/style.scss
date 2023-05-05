@@ -970,7 +970,6 @@
       border-color: #F4F4F4;
       background-color: #fff;
       border-radius: 6px 6px 0px 0px;
-      border-color: red;
     }
 
     span {
@@ -1021,6 +1020,9 @@
   }
 
   &__place-btn {
+    display: inline-block;
+    user-select: none;
+    position: relative;
     background-color: #46AABE;
     border-radius: 6px;
     font-weight: 500;
@@ -1030,8 +1032,57 @@
     text-transform: lowercase;
     border: none;
     color: #fff;
+    cursor: pointer;
+
+    &--active {
+      background-color: #00A3FF;
+    }
   }
 
+}
+
+
+
+.cards__place-btn input[type=checkbox] {
+	z-index: -1;
+	opacity: 0;
+	display: block;
+	width: 0;
+	height: 0;
+}
+
+.cards__place-btn span {
+	display: inline-block;
+	cursor: pointer;
+	transition: background 0.2s ease;
+}
+
+
+ 
+/* Focus */
+.focused span {
+	box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+ 
+/* Hover */
+.car.cards__place-btn:hover {
+	color: #666;
+}
+ 
+/* Active */
+.car.cards__place-btn input[type=checkbox]:active:not(:disabled) + span {
+	background: #d2c5ac;
+	color: #000;
+}
+ 
+/* Disabled */
+.car.cards__place-btn input[type=checkbox]:disabled + span {
+	background: #efefef;
+	color: #666;
+	cursor: default;
+}
+.car.cards__place-btn input[type=checkbox]:checked:disabled + span {
+	background: #f7efdc;
 }
 
 

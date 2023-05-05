@@ -1749,6 +1749,7 @@ $(document).ready(function () {
 		$('.nav-menu').toggleClass('nav-menu--active')
 	})
 
+
 	$('.popup-btn').click(function () {
 		let popup = $(this).attr('data-popup');
 
