@@ -107,6 +107,9 @@ const tabs = () => {
             dateItems[count].classList.add('hidden');
             
             count++;
+
+            console.log(parentBlock);
+            console.log(dateItems);
            
             showArrow(parentBlock);
             handlerBtn();

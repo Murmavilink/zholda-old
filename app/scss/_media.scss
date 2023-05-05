@@ -158,6 +158,10 @@
     }
   }
 
+  .area-info__inner {
+    min-height: 460px;
+  }
+
   .area-info__schedule {
     overflow-x: scroll;
   }
@@ -167,7 +171,9 @@
   // }
 
   .area-info__btn-edit {
-    display: none;
+    position: absolute;
+    bottom: 0px;
+    right: 0;
   }
 
   ////////////////// media
@@ -769,9 +775,12 @@
     font-size: 16px;
     line-height: 21.6px;
   }
+  
+  .area-info__inner {
+    min-height: 418px;
+  }
 
   ////////////////// media
-
 }
 
 
@@ -883,15 +892,20 @@
     &__circle-arrow-right, &__circle-arrow-left {
       width: 30px;
       height: 30px;
-      // margin-left: 4px;
       padding: 6px;
-      // background-color: #fff;
-
       svg {
         width: 16px;
         height: 16px;
       }
     }
+
+    // &__circle-arrow-left {
+    //   ma;
+    // }
+
+    // &__circle-arrow-right {
+    //   margin-right: -5px;
+    // }
 
     &__place-btn {
       padding: 15px 24px;
@@ -955,23 +969,12 @@
 
     &__day {
       padding: 15px 13px;
-      flex-basis: 40px;
       span {
         font-size: 12px;
         line-height: 21.6px;
       }
     }
     
-    &__circle-arrow-right, &__circle-arrow-left {
-      width: 19px;
-      height: 18px;
-      padding: 6px;
-      svg {
-        width: 6px;
-        height: 6px;
-      }
-    }
-
     &__place-wrap {
       width: auto;
     }
@@ -1122,6 +1125,10 @@
   .area-info {
     padding-top: 30px;
     margin-right: 11px;
+
+    &__inner {
+      min-height: 320px;
+    }
 
     &__top-info {
       column-gap: 20px;
@@ -1275,7 +1282,17 @@
     }
   }
 
+  .cards__day {
+    flex-basis: 50px;
+  }
+
   ////////////////// media
+}
+
+@media screen and (max-width: 425px) {  
+  .cards__day {
+    flex-basis: 47px;
+  }
 }
 
 @media screen and (max-width: 412px) {
@@ -1287,6 +1304,10 @@
 @media screen and (max-width: 400px) {
   .popular__cont-items-item {
     width: 100%;
+  }
+  
+  .cards__day {
+    flex-basis: 39px;
   }
 }
 
